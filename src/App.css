@@ -1,0 +1,173 @@
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 15px;
+}
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-item {
+  margin: 0.25rem;
+}
+
+.page-link {
+  padding: 0.5rem 0.75rem;
+}
+
+.app-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #007bff;
+}
+
+.user-list-container {
+  height: 70vh;
+  overflow-y: auto;
+  border-right: 1px solid #e0e0e0;
+}
+
+.user-details-container {
+  position: sticky;
+  top: 20px;
+}
+
+.user-details-card {
+  margin-top: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-details-placeholder {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #888;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+/* src/components/UserList.css */
+.pagination {
+  margin-top: 20px;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  color: #007bff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.page-link:hover {
+  background-color: #f8f9fa;
+  border-color: #dee2e6;
+}
+
+.page-item.active .page-link {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+.page-item.disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+  background-color: white;
+  border-color: #dee2e6;
+}
+
+.page-link:focus {
+  box-shadow: none;
+}
+
+.list-group-item {
+  transition: background-color 0.2s;
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa;
+}
+/* src/components/UserDetails.css */
+.user-details-card {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-details-placeholder {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #888;
+}
+/* src/components/UserList.css */
+.user-avatar {
+  object-fit: cover;
+}
+
+.list-group-item {
+  transition: background-color 0.2s;
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa;
+}
+/* src/components/UserDetails.css */
+.user-avatar.hidden {
+  display: none;
+}
+
+.loader {
+  
+  width: 40px;
+  height: 40px;
+}
+ .img img{
+  height: 70px;
+  width: 70px;
+ }
+.user-details-card .text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-details-card .mt-2 {
+  margin-top: 0.5rem;
+}
+
+/* .user-details-card {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-details-placeholder {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #888;
+}
+
+.loader{
+  max-width: 20px;
+  margin-left: 10px;
+} */
